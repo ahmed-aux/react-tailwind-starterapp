@@ -1,0 +1,17 @@
+{
+    "files.watcherExclude": {
+        "**/routeTree.gen.ts": true
+    },
+    "search.exclude": {
+        "**/routeTree.gen.ts": true
+    },
+    "files.readonlyInclude": {
+        "**/routeTree.gen.ts": true
+    },
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#183b44",
+        "titleBar.activeForeground": "#ffffff",
+        "titleBar.inactiveBackground": "#12292f",
+        "titleBar.inactiveForeground": "#cccccc"
+    }
+}
