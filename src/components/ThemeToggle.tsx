@@ -1,8 +1,7 @@
 import { Moon, Sun } from 'lucide-react';
-import { Switch } from '@/components/ui/switch';
-import { Label } from '@/components/ui/label';
-import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import { toggleTheme } from '@/store/slices/themeSlice';
+import { Switch } from '~/components/ui/switch';
+import { useAppDispatch, useAppSelector } from '~/store/hooks';
+import { toggleTheme } from '~/store/slices/themeSlice';
 
 export function ThemeToggle() {
     const theme = useAppSelector((state) => state.theme.mode);

@@ -1,8 +1,8 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ThemeToggle } from '@/components/ThemeToggle';
-import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import { increment, decrement } from '@/store/slices/counterSlice';
+import { Button } from '~/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
+import { useAppDispatch, useAppSelector } from '~/store/hooks';
+import { increment, decrement } from '~/store/slices/counterSlice';
+import { ThemeToggle } from '~/components/ThemeToggle';
 
 function App() {
     const count = useAppSelector((state) => state.counter.value);

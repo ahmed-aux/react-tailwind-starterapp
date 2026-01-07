@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useAppSelector } from '@/store/hooks';
+import { useAppSelector } from '~/store/hooks';
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const theme = useAppSelector((state) => state.theme.mode);
