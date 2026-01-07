@@ -6,29 +6,37 @@ A Starter app including:
 -   Shadn-ui
 -   Redux toolkit
 
-To install:
+## Getting Started
 
-```
+### Clone the Repository (without origin remote)
+
+```bash
 nvm use 22.11.0
-git clone -b main git@github.com:rishadomar/react-shadcn-tailwind-starterapp.git <YOUR_APP_NAME_HERE>
+git clone -b main --single-branch git@github.com:rishadomar/react-shadcn-tailwind-starterapp.git <YOUR_APP_NAME_HERE>
 cd <YOUR_APP_NAME_HERE>
+rm -rf .git
 npm install
 npm run dev
 ```
 
-Other useful npm commands:
+This clones only the main branch code without any git history or remote configuration.
 
-```
-npm run build
-npm run preview
+### Set Up Your Own Repository
+
+After cloning, initialize your own git repository:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <YOUR_NEW_REPOSITORY_URL>  # eg. git@github.com:yourusername/your-project.git
+git push -u origin main
 ```
 
-To commit to your own repo:
+### Other Useful Commands
 
-```
-git remote -v # (optional) It displays the name of the current repo
-git remote remove origin
-git remote add origin <YOUR_NEW_REPOSITORY_URL> # eg. git@github.com:rishadomar/someproject.git
-git remote -v # (optional) Confirm the name of the new repo
-git push -u origin <YOUR_CURRENT_BRANCH_NAME>  # eg. getting-started
+```bash
+npm run build    # Build for production
+npm run preview  # Preview production build locally
+npm run lint     # Run ESLint
 ```
